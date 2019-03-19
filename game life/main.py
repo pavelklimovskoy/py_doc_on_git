@@ -11,7 +11,6 @@ delay = 1
 flag = 1
 
 
-
 for x in range(c_width):
     cells.append([])                       #тут
     for y in range(c_height):
@@ -112,12 +111,8 @@ def save():
         file.write("\n")
     file.write("\n")
     file.close()
-
-
-
-
-
-
+    
+    
 def simulation():
     global  step, width, height, c_width, c_height, flag
     if flag:
@@ -167,7 +162,6 @@ panel.add_command(label='Start', command=start)
 panel.add_command(label='Stop', command=stop)
 panel.add_command(label='Reset', command=reset)
 panel.add_command(label='Save', command=save)
-
 
 init_setka(step)
 
